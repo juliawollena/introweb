@@ -34,32 +34,32 @@
         <!--Tabela de produtos-->
         <section class="product-list">
           <h3>Lista de Produtos</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Produto</th>
-              <th>Preço</th>
-              <th>Categoria</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Fone</td>
-              <td>R$250,00</td>
-              <td>Eletrônicos</td>
-            </tr>
-            <tr>
-              <td>Mouse</td>
-              <td>R$180,00</td>
-              <td>TI</td>
-            </tr>
-            <tr>
-              <td>Teclado</td>
-              <td>R$200,00</td>
-              <td>TI</td>
-            </tr>
-          </tbody>
-        </table>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Categoria</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fone</td>
+                <td>R$250,00</td>
+                <td>Eletrônicos</td>
+              </tr>
+              <tr>
+                <td>Mouse</td>
+                <td>R$180,00</td>
+                <td>TI</td>
+              </tr>
+              <tr>
+                <td>Teclado</td>
+                <td>R$200,00</td>
+                <td>TI</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <article>
@@ -71,9 +71,132 @@
           <p>Detalhes do Teclado</p>
         </article>
       </section>
-      <section class="contact" id="contato">
-        <h2>Contato</h2>
-        <p>contato@minhaloja.com.br</p>
+
+      <section id="contato">
+        <h2>Cadastro / Contato</h2>
+        <form class="form-contato" method="post" action="servidor.php">
+          <fieldset>
+            <legend>CADASTRO</legend>
+
+            <label for="nome">Nome:</label><br />
+
+            <!--br é para pular linha-->
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite o seu nome"
+              required
+              minlength="3"
+            />
+
+            <br />
+            <br />
+
+            <label for="senha">Senha:</label><br />
+            <input
+              type="password"
+              placeholder="Digite sua Senha"
+              id="senha"
+              required
+              min="8"
+            />
+
+            <br />
+            <br />
+
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Informe seu email"
+              min="12"
+              max="21"
+              required
+            />
+
+            <br />
+            <br />
+            <label for="idade">Idade:</label><br />
+            <input
+              type="number"
+              id="idade"
+              placeholder="Informe sua idade"
+              min="16"
+              required
+            />
+          </fieldset>
+
+          <br />
+          <br />
+
+          <fieldset>
+            <legend>Categoria de Interesse</legend>
+            <select name="category" id="input-category">
+              <option value="">Selecione...</option>
+              <option value="notebook">Notebook</option>
+              <option value="teclado">Teclado</option>
+            </select>
+          </fieldset>
+
+          <br />
+          <br />
+          <fieldset>
+            <legend>Preferências</legend>
+
+            <input
+              type="checkbox"
+              name="preferences"
+              id="check-offers"
+              value="offers"
+            />
+            <label for="check-offers">Receber ofertas</label>
+            <br />
+            <input
+              type="checkbox"
+              name="preferences"
+              id="check-news"
+              value="news"
+            />
+            <label for="check-news">Newsletter</label>
+            <br />
+            <input
+              type="checkbox"
+              name="preferences"
+              id="check-sup"
+              value="sup"
+            />
+            <label for="check-sup">Suporte</label>
+          </fieldset>
+
+          <br />
+          <br />
+
+          <fieldset>
+            <legend>Tipo de Cliente</legend>
+            <input type="radio" name="client-type" id="radio-pf" value="pf" />
+            <label for="radio-pf">Pessoa Física</label>
+            <br />
+            <input type="radio" name="client-type" id="radio-pj" value="pj" />
+            <label for="radio-pj">Pessoa Jurídica</label>
+          </fieldset>
+          <br />
+          <br />
+
+          <fieldset>
+            <legend>Deixe aqui uma mensagem</legend>
+            <textarea
+              placeholder="Digite aqui"
+              name="msg"
+              rows="5"
+              cols="40"
+              maxlength="150"
+            >
+            </textarea>
+            <br>
+            <input type="submit" value="Enviar"/>
+          </fieldset>
+        </form>
       </section>
     </main>
 
