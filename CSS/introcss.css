@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#52423c;
+    font-size: 18px;   
+}
+
+h1{
+    color:black;
+    margin: 12px;
+    background-color: #ad5c70;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+#intro {
+    background-color: #ad5c70;
+    padding: 10px 50px;
+    width: auto;
+    height: auto;
+    border: 8px double #edd4be ;
+    border-radius: 15px;
+}
+
+p{
+    color:#edd4be;
+    margin: 20px;
+    background-color: #ad5c70;
+    border: 8px double;
+    border-radius: 15px;
+    padding:10px 50px;
+}
+ 
+
+/* ao passar o mouse sobre o link*/
+a:hover {
+    color:#52423c;
+    text-decoration:underline;
+}
+
+/*apenas o link*/
+a{
+    color: #edd4be;
+    text-decoration: none;
+    transition: 0.3s;
+}
