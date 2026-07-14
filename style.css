@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:#f8f9fa;
+color: #212529;
+line-height: 1.5;
+}
+.header{
+    background-color: #046d8b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 1px;
+    
+}
+.header h1{
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+.nav-menu ul{
+    background-color:#046d8b;
+    justify-content: center;
+    list-style:none;
+    gap: 10px;
+    display: flex;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+.product-list{
+    margin: 30px 0;
+}
+#home{
+    padding: 20px;
+    margin: 0px auto;
+}
+.categorias{
+padding: 10px;
+}
+
+#contato{
+    background-color:#ffffff ;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    border: 1px solid #dee2e6;
+}
+legend{
+    text-align: center;
+}
+footer{
+    background-color:#212529;
+    color: #ffffff;
+    text-align: center;
+}
