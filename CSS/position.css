@@ -13,16 +13,93 @@ body{
 }
 #geral{
     width: 900px;
+    height: 2500px;
     margin:100px  auto;
+    background-color: aquamarine;
+    border-radius: 15px;
 }
 
 #bloco1, #bloco2{
     border: 3px solid rgb(0, 0, 0);
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background-color: white;
+    border-radius: 15px;
 }
 img{
     width: 200px;
     border: 3px solid black;
+    border-radius: 15px;
+}
+/*ENTENDENDO POSITION*/
+/*position static*/
+
+/*fone de ouvido*/
+#img1{
+position: static; /*colocando como estatico ele nao funciona/
+ignora parametros de movimentação*/
+top: 100000px; /*não funciona*/
+left: 100px;
+}
+
+/*position relative a posição do elemento
+ é relativa a sua posição normal 
+ o espaço original fica livre após a movimentação*/
+/*tablet*/
+#img3{
+position: relative; /*consegue se movimentar relativo 
+a casa que ele esta*/
+top: 250px;
+left: 204px;
+}
+
+/*position absolute*/
+/*elemento pai->bloco1*/
+#bloco1{
+    position: relative;
+}
+
+/*elemento filho->img2 (nintendo)*/
+/*a posiçãõ é relativa ao seu elemento 
+pai mais proximo que tenha position diferente de static*/
+#img2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/*position fixed*/
+/*notebook*/
+#img4{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+
+/*
+----------------------------------------------------
+Z-INDEX
+----------------------------------------------------
+*/
+
+/*vamos testar o z-index com os blocos 1 e 2*/
+
+#bloco1{
+position: relative;
+z-index: 1;
+}
+
+#bloco2{
+position: relative;
+top: -120px;
+left: 120px;
+}
+
+/*agora sim vamos conhecer o z-index*/
+
+#bloco1{
+    z-index: index 1;
+}
+#bloco2{
+    z-index: index 2;
 }
