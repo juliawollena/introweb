@@ -87,6 +87,29 @@ position: fixed;
     margin: 40px auto;
     border: 1px solid #dee2e6;
 }
-legend{
+#contato h2{
     text-align: center;
+}
+.about h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.about p {
+  margin-bottom: 15px;
+}
+.products h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;   
+}
+.categorias {
+  margin-bottom: 25px;
+}
+.products article {
+  margin-bottom: 15px;
+}
+#contato h2 {
+  margin-bottom: 15px; 
+}
+.product-list h3 {
+  margin-bottom: 15px;
 }
